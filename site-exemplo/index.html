@@ -15,6 +15,69 @@
 
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos officiis ipsa laboriosam dolorem aspernatur temporibus culpa animi doloremque sit alias ratione quia quos, corrupti hic voluptatem minima nesciunt architecto sapiente.</p>
 
+<p>PARA FAZER PUSH DIRETO PELO VSCODE É SÓ UTILIZAR O COMANDO CTRL  +  P  </p>
+
+<p>No Git, os arquivos podem ter os estados:</p>
+    
+    <li>Unmodified (Não Modificado)</li > 
+        <li>Modified (Modificado)</li> <li>Staged (Preparado)</li>  <li>Untracked (Não Rastreado).</li> 
+        
+        <p>Untracked é para arquivos novos que o Git ainda não conhece; Modified indica que um arquivo rastreado foi alterado; Staged é quando você prepara a alteração para o próximo commit; e Unmodified significa que o arquivo foi salvo no banco de dados do Git sem alterações pendentes. </p>
+
+
+<p>Os Estados dos Arquivos no Git Untracked (Não Rastreado): Este é o estado inicial de qualquer arquivo que você adicionou ao seu diretório de trabalho, mas que o Git ainda não está monitorando.O Git não tem nenhuma informação sobre ele, então ele não faz parte do histórico do repositório.</p>
+
+<p>
+    Unmodified (Não Modificado):
+    Este estado é para arquivos que o Git está rastreando, mas que não sofreram nenhuma alteração desde o último commit.
+    Eles existem no banco de dados do Git e não precisam ser adicionados novamente à área de preparação.
+</p>
+
+<p>
+    Modified (Modificado):
+    Você altera um arquivo que já está sendo rastreado, e ele passa para o estado Modified, indicando que há alterações no seu diretório de trabalho.
+    Para que essas modificações sejam salvas em um commit, você precisa adicioná-las à área de preparação.
+</p>
+
+<p>
+    Staged (Preparado):
+    Após usar o comando git add, um arquivo modificado é movido para a área de staging. Ele está pronto para ser incluído no próximo commit, que será uma nova "foto" do seu projeto registrada no banco de dados do Git.</p>
+
+<h1>O Ciclo de Vida dos Estados:</h1>
+Adicionar um Arquivo:
+
+<p>Um arquivo novo é Untracked.</p> 
+
+<p>Rastrear o Arquivo: Você usa git add e ele se torna Staged. </p>
+
+<p>Fazer um Commit: O Git cria uma nova versão do arquivo e ele volta ao estado Unmodified no banco de dados.</p>
+
+<p>Modificar o Arquivo: Se você editar um arquivo Unmodified, ele se torna Modified.
+</p>
+
+<p>Repetir o Ciclo: Você pode adicioná-lo novamente à área de Staged usando git add e criar um novo commit.</p>
+    
+<h1>CLONANDO REPOSITÓRIOS</h1>
+
+<p>Para clonar um repositório, você pode usar o comando git clone seguido da URL do repositório que deseja copiar.</p>
+
+<p>Clonagem significa que outra pessoa pode pegar seu código ou projeto e executar o seu programa e a partir dele fazer contribuições e alterações. O clone fica no diretório local da máquina que executou o comando. Para enviar as alterações de volta, você precisaria fazer um push para o repositório remoto.</p>
+
+<p>Fetch Origin: O comando git fetch origin é usado para baixar as alterações do repositório remoto, para seu repositório local, mas não as mescla automaticamente com a sua branch local. Ele verifica se há novas alterações no repositório remoto e as traz para o seu repositório local, permitindo que você as revise antes de mesclá-las. Verifica se precisa dar um push  (mandar / empurrar para o servidor), ou pull ( coisas do repositório remoto).</p>
+
+<p>GIT IGNORE - SERVE PARA IGNORAR ARQUIVOS DESNECESSÁRIOS DENTRO DE UMA PASTA OU PROJETO. ELE NÃO VAI NEM VERSIONAR LOCALMENTE NEM ENVIAR PARA O GITHUB QUANDO FIZERMOS UM PUSH.</p>
+
+<p>Nós não temos autorização de copiar o repositório de ninguém e colocar lá de volta. Mas pode sugerir alterações criando  ISSUES.  <br>ISSUES são uma forma de comunicação entre os colaboradores de um projeto, permitindo que você descreva problemas, solicite melhorias ou faça perguntas sobre o código.</p>
+
+<h2>ISSUES são utilizadas para quando se descobre problema(s) que não temos idéia de como resolver, ou não temos acesso para resolver e precisamos de ajuda.</h2>
+
+<p>PULL REQUESTS (PRs) são uma forma de propor alterações em um repositório. Quando você faz um PR, está pedindo para que suas alterações sejam revisadas e se aprovadas, mescladas ao branch principal do projeto.
+É QUANDO VOCÊ ENCONTRA UM PROBLEMA, ANALISEI O CÓDIGO, APRENDI COMO RESOLVER, MEXI NO CÓDIGO, DEI UMA SOLUÇÃO E RESOLVI UM PROBLEMA E AI ENVIA PARA O DESENVENVOLDER VIA PR, PARA AUTORIZAR QUE VOCÊ FAÇA ALTERAÇÕES NO REPOSITÓRIO. SE O PROGRAMADOR VER QUE FAZ SENTIDO E APROVAR, ELE VAI MESCLAR AS SUAS ALTERAÇÕES ( SUA BRANCH  - RAMIFICAÇÃO ),AO CÓDIGO PRINCIPAL E PARTE DO PROJETO.</p>
+
+
+
+
+
 
 </body>
 </html>
