@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Exemplo</title>
+</head>
+<body>
+    
+<h1>Testando os comandos entre VSCODE e GITHUB</h1>
+
+<h2>Meus primeiros comandos EM REPOSITÓRIO</h2>
+
+<hr>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos officiis ipsa laboriosam dolorem aspernatur temporibus culpa animi doloremque sit alias ratione quia quos, corrupti hic voluptatem minima nesciunt architecto sapiente.</p>
+
+<p>PARA FAZER PUSH DIRETO PELO VSCODE É SÓ UTILIZAR O COMANDO CTRL  +  P  </p>
+
+<p>No Git, os arquivos podem ter os estados:</p>
+    
+    <li>Unmodified (Não Modificado)</li > 
+        <li>Modified (Modificado)</li> <li>Staged (Preparado)</li>  <li>Untracked (Não Rastreado).</li> 
+        
+        <p>Untracked é para arquivos novos que o Git ainda não conhece; Modified indica que um arquivo rastreado foi alterado; Staged é quando você prepara a alteração para o próximo commit; e Unmodified significa que o arquivo foi salvo no banco de dados do Git sem alterações pendentes. </p>
+
+
+<p>Os Estados dos Arquivos no Git Untracked (Não Rastreado): Este é o estado inicial de qualquer arquivo que você adicionou ao seu diretório de trabalho, mas que o Git ainda não está monitorando.O Git não tem nenhuma informação sobre ele, então ele não faz parte do histórico do repositório.</p>
+
+<p>
+    Unmodified (Não Modificado):
+    Este estado é para arquivos que o Git está rastreando, mas que não sofreram nenhuma alteração desde o último commit.
+    Eles existem no banco de dados do Git e não precisam ser adicionados novamente à área de preparação.
+</p>
+
+<p>
+    Modified (Modificado):
+    Você altera um arquivo que já está sendo rastreado, e ele passa para o estado Modified, indicando que há alterações no seu diretório de trabalho.
+    Para que essas modificações sejam salvas em um commit, você precisa adicioná-las à área de preparação.
+</p>
+
+<p>
+    Staged (Preparado):
+    Após usar o comando git add, um arquivo modificado é movido para a área de staging. Ele está pronto para ser incluído no próximo commit, que será uma nova "foto" do seu projeto registrada no banco de dados do Git.</p>
+
+<h1>O Ciclo de Vida dos Estados:</h1>
+Adicionar um Arquivo:
+
+<p>Um arquivo novo é Untracked.</p> 
+
+<p>Rastrear o Arquivo: Você usa git add e ele se torna Staged. </p>
+
+<p>Fazer um Commit: O Git cria uma nova versão do arquivo e ele volta ao estado Unmodified no banco de dados.</p>
+
+<p>Modificar o Arquivo: Se você editar um arquivo Unmodified, ele se torna Modified.
+</p>
+
+<p>Repetir o Ciclo: Você pode adicioná-lo novamente à área de Staged usando git add e criar um novo commit.</p>
+    
+<h1>CLONANDO REPOSITÓRIOS</h1>
+
+<p>Para clonar um repositório, você pode usar o comando git clone seguido da URL do repositório que deseja copiar.</p>
+
+<p>Clonagem significa que outra pessoa pode pegar seu código ou projeto e executar o seu programa e a partir dele fazer contribuições e alterações. O clone fica no diretório local da máquina que executou o comando. Para enviar as alterações de volta, você precisaria fazer um push para o repositório remoto.</p>
+
+<p>Fetch Origin: O comando git fetch origin é usado para baixar as alterações do repositório remoto, para seu repositório local, mas não as mescla automaticamente com a sua branch local. Ele verifica se há novas alterações no repositório remoto e as traz para o seu repositório local, permitindo que você as revise antes de mesclá-las. Verifica se precisa dar um push  (mandar / empurrar para o servidor), ou pull ( coisas do repositório remoto).</p>
+
+<p>GIT IGNORE - SERVE PARA IGNORAR ARQUIVOS DESNECESSÁRIOS DENTRO DE UMA PASTA OU PROJETO. ELE NÃO VAI NEM VERSIONAR LOCALMENTE NEM ENVIAR PARA O GITHUB QUANDO FIZERMOS UM PUSH.</p>
+
+<p>Nós não temos autorização de copiar o repositório de ninguém e colocar lá de volta. Mas pode sugerir alterações criando  ISSUES.  <br>ISSUES são uma forma de comunicação entre os colaboradores de um projeto, permitindo que você descreva problemas, solicite melhorias ou faça perguntas sobre o código.</p>
+
+<p>Gestor de Issues ou pessoa responsável pela triagem e gerenciamento das questões levantadas.  Pessoa que usa Issues são os desenvolvedores e colaboradores do projeto.</p>
+
+<h2>ISSUES são utilizadas para quando se descobre problema(s) que não temos idéia de como resolver, ou não temos acesso para resolver e precisamos de ajuda.
+Para mencionar o número de uma Issue para que alguém entre nela diretamente pela mensagem, é só colocar #  + o úmero da Issue que ao clicar nela será direcionado para dentro dela.</h2>
+
+<p>Para travar as conversas numa Issue , após marcar como resolvido, você pode adicionar um comentário final e fechar a conversa da Issue, no canto direito da página, em cima na opção Lock Conversation.</p>
+
+<p>MD - MARKDOWN ** ou _ _  Deixa o texto em negrito na mensagem colocada na Issue. Precisa envolver a palavra ou frase como por exemplo:  **Utilize assim.**
+* OU _ Faz a palavra ou frase ficar e Itálico.
+# Título - cria um título de nívlel 1.  ## Título (NO LUGAR DA PALAVRA TÍTULO, ESCREVA O TÍTULO ESCOLHIDO)- cria um título de nível 2.   ### Título - cria um título de nível 3.   #### Título - cria um título de nível 4.   ##### Título - cria um título de nível 5.   ###### Título - cria um título de nível 6.
+- - -  Ou *** Cria uma linha horizontal.
+_ _ *Aqui um texto ou palavra*_ _ cria negrito e itálico. OS SINAIS NÃO PODEM CONTER ESPAÇOS E PRECISAM  FICAR JUNTO DA PALAVRA OU FRASE.  AQUI FOI ESCRITO CO ESPAÇOS APENAS PARA FACILITAR A LEITURA.
+~ ~ Faz palavras ou frases ficarem riscados.   aparecer um Bullet antes de cada item.
+`Para ver funcionando é só clicar em Preview.
+LISTA NUMERADA  -  UM NÚMERO  +  UM . EXEMPLO: 1. 
+PARA COLOCAR SUITEM NA LISTA - COLOCAR ESPAÇO  + UM NÚMERO  + . 
+LISTA DEMARCADA  - OU *  EXEMPLO: -Teste   ou *-Teste
+LISTA DE TAREFAS: PODE SER COLOCADO NO README POR EXEMPLO:   - [] PRECISO CRIAR A PÁGINA PRINCIPAL. 
+- [] CRIAR A PÁGINA DA LOJA.
+QUANDO AS TAREFAS ESTIVEREM FINALIZADAS É SÓ COLOCAR UM X DENTRO DOS COLCHETES E NO PREVIEW APARECERÁ CO O SÍMBOLO DE CHECKED.  EXEMPLO: - [x]CRIAR A PÁGINA DA LOJA.</p>
+
+<p>Para colocar imagem: 
+    ![](aqui o link da imagem) ou arrastar para o rodapé da caixa de Issues para fazer o upload e não pode ser uma imagem muito grande e o recomendado é no máximo 400px ou 500px de largura, sempre nop formato png ou jpg. Tudo que estiver entre colchetes é a descrição da imagem, como se fosse o alt de uma tag img.</p>
+
+<p>Para inserir link:        [](aqui a url)  <br>       [Acesse meu email](httpd://bia@gmail.com)</p>
+
+<p>Para inserir a assinatura pádrão diretamente na resposta de uma Issue é só clicar na seta no final do campo de texto, conforme print abaixo.</p>
+
+<p>Tabelas . Veja no print abaixo. Utilizar a tecla pipe | </p>
+
+<img src="./assets/images/TabelapExpress_1a142fbf9def43c08a8765d386f7d203_CopyEdited.png" alt="Print da tabela. ">
+
+<p>Para fazer uma assinatura padrão:  Clicar na foto de perfil - settings - SAVED REPLIES. Pode colocar foto, link, etc.</p>
+
+<figure>
+    <img src="../assets/images/AdobePhotoshopExpress_d6bdf31b564a437d80483d00711a70f5_CopyEdited.png" alt="Print de tela do GitHub mostrando a seta para inserir a assinatura padrão em uma Issue">
+
+    <img src="../assets/images/AdobePhotoshopExpress_38b3397628a4477cbcce86b78c0b9950_CopyEdited.png" alt="">
+    </figure>
+
+    <p>Para escrever comandos verificar print abaixo.</p>
+
+    <img src="./assets/images/Comandoss_e2b12b6748244840a29ace8501c07b24_CopyEdited.png" alt="Comandos de códigos">
+
+    <img src="./assets/images/Preview-Comandos_070b1a82cd9d45928f04efb379ac5ca5_CopyEdited.png" alt="Preview de como fica escrito. Monoespaçado. ">
+
+<p>Para escrever trechos de códigos é só utilizar 3 crases ````.Ver print abaixo.</p>
+
+<img src="./assets/images/Codigo_cd7adeb6d5224ad3970aca069884a0f2_CopyEdited.png" alt="Trecho de código">
+
+<p>PARA INSERIR EMOJIS -   SÓ COLOCAR : + O NOME DO EMOJI . VER PRINT AVBAIXO.</p>
+
+<img src="./assets/images/Emoji_0200ac28fd8446e0869575f445bcc0c3_CopyEdited.png" alt="Inserirdo Emoji">
+
+<p>Pinned Issues são questões que foram destacadas e fixadas no topo da lista de Issues, para que recebam mais atenção.Essas Issues podem ser importantes para o andamento do projeto e geralmente são discutidas com mais profundidade.
+Para Pinnar Issues, é só abrir uma Issue e clicar no Unpin Issue no direito da página, abaixo de Lock Conversation.Isso fará com que a Issue fique fixa no topo da lista de Issues do repositório, facilitando o acesso e a visibilidade para todos os colaboradores do projeto.
+</p>
+
+<p>PULL REQUESTS (PRs) são uma forma de propor alterações em um repositório. Quando você faz um PR, está pedindo para que suas alterações sejam revisadas e se aprovadas, mescladas ao branch principal do projeto.
+É QUANDO VOCÊ ENCONTRA UM PROBLEMA, ANALISEI O CÓDIGO, APRENDI COMO RESOLVER, MEXI NO CÓDIGO, DEI UMA SOLUÇÃO E RESOLVI UM PROBLEMA E AI ENVIA PARA O DESENVENVOLDER VIA PR, PARA AUTORIZAR QUE VOCÊ FAÇA ALTERAÇÕES NO REPOSITÓRIO. SE O PROGRAMADOR VER QUE FAZ SENTIDO E APROVAR, ELE VAI MESCLAR AS SUAS ALTERAÇÕES ( SUA BRANCH  - RAMIFICAÇÃO ),AO CÓDIGO PRINCIPAL E PARTE DO PROJETO.</p>
+
+<h1>QUALQUER DÚVIDA SÓ VERIFICAR O PDF SOBRE MARKDOW NA PASTA GITHUB, DE AULAS DO GUANABARA </h1>
+
+</body>
+</html>
